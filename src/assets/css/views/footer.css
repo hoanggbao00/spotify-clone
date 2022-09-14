@@ -1,0 +1,149 @@
+.footer {
+  position: fixed;
+  z-index: 3;
+  background-color: #222;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  padding: 20px;
+  color: #fff;
+}
+.footer footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .track--info {
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
+}
+.footer .track--info__img img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 15px;
+}
+.footer .track--info__title {
+  height: 100px;
+  padding: 10px 0;
+  font-size: 1.3rem;
+}
+.footer .track--info__title .track-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer .track--info__title .track-artist {
+  color: #999;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+.footer .track--info__title .track-artist .artist:hover {
+  color: #fff;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.footer .track--info__favorite {
+  height: 100px;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-left: 15px;
+  line-height: 60px;
+  color: #999;
+}
+.footer .track--info__favorite i + i {
+  margin-left: 10px;
+}
+.footer .track--info__favorite i:hover {
+  color: #fff;
+}
+.footer .controls {
+  width: calc(100% - 520px);
+  text-align: center;
+  height: 100px;
+  color: #999;
+  font-size: 12px;
+  max-width: 500px;
+  min-width: 380px;
+}
+.footer .controls .row {
+  height: 50%;
+}
+.footer .controls i {
+  font-size: 18px;
+  line-height: 40px;
+}
+.footer .controls i:hover {
+  color: #fff;
+}
+.footer .controls i#middle {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: -5px;
+  line-height: 0;
+}
+.footer .controls i + i {
+  margin: 0 10px;
+}
+.footer .controls .progress_bar {
+  display: inline-block;
+  width: calc(100% - 60px);
+  height: 5px;
+  background-color: #888;
+  border-radius: 15px;
+  margin: 0 5px;
+  position: relative;
+}
+.footer .controls .progress_bar span {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.footer .controls .progress_bar span::after {
+  display: none;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer .controls .progress_bar span:hover {
+  background-color: lightgreen;
+}
+.footer .controls .progress_bar span:hover::after {
+  display: block;
+}
+.footer .features {
+  min-width: 200px;
+  text-align: right;
+}
+.footer .features i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #999;
+}
+.footer .features i:hover {
+  color: #fff;
+}
+.footer .features .volume-bar {
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 5px;
+}/*# sourceMappingURL=footer.css.map */

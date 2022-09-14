@@ -1,0 +1,9 @@
+.content {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  background-color: #000;
+}
+.content main {
+  margin-top: 60px;
+  padding-bottom: 300px;
+}/*# sourceMappingURL=global.css.map */

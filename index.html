@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font awesome -->
+  <!-- link font awesome 5.15.4 pro here -->
+  <link rel="stylesheet" href="./src/assets/css/common/font/fontawesome-5.15.4/css/all.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./src/assets/css/common/common.css">
+  <link rel="stylesheet" href="./src/assets/css/views/sidebar.css">
+  <link rel="stylesheet" href="./src/assets/css/views/header.css">
+  <link rel="stylesheet" href="./src/assets/css/views/footer.css">
+
+  <title>Spotify Clone</title>
+</head>
+<body>
+  <!-- sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <svg viewBox="0 0 1134 340" class="spotify-logo--text"><title>Spotify</title><path fill="currentColor" d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"></path></svg>
+    </div>
+    <nav>
+      <div class="nav--item active">
+        <div class="nav--item__icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="nav--item__title">Home</div>
+      </div>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="nav--item__title">Search</div>
+      </div>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <div class="nav--item__title">Your Library</div>
+      </div>
+    </nav>
+
+    <nav>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-plus-square"></i>
+        </div>
+        <div class="nav--item__title">Create Playlist</div>
+      </div>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="nav--item__title">Liked Songs</div>
+      </div>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-bookmark"></i>
+        </div>
+        <div class="nav--item__title">Your Episodes</div>
+      </div>
+    </nav>
+    <div class="sidebar--playlist">
+      <ul class="sidebar--playlist__list">
+        <li>This is Keshi</li>
+        <li>Until I Found You</li>
+        <li>Nothing Radio</li>
+        <li>Homage Radio</li>
+        <li>Những Thành Phố Mơ Màng</li>
+        <li>Indie Việt</li>
+        <li>Ghé Qua Radio</li>
+        <li>late night vibes</li>
+        <li>Chill Vibes</li>
+        <li>Needs Radio</li>
+        <li>late night vibes</li>
+        <li>Chill Vibes</li>
+        <li>Needs Radio</li>
+        <li>late night vibes</li>
+        <li>Chill Vibes</li>
+        <li>Needs Radio</li>
+      </ul>
+    </div>
+    <nav>
+      <div class="nav--item">
+        <div class="nav--item__icon">
+          <i class="fas fa-arrow-circle-down"></i>
+        </div>
+        <div class="nav--item__title">Install App</div>
+      </div>
+    </nav>
+  </div>
+<!-- sidebar -->
+
+<!-- body -->
+  <div class="content">
+    <!-- header -->
+    <header class="header">
+      <div class="header--left">
+        <button>
+          <i class="far fa-angle-left"></i>
+        </button>
+        <button>
+          <i class="far fa-angle-right"></i>
+        </button>
+      </div>
+      <div class="header--right">
+        <div class="btn">Upgrade</div>
+        <div class="dropdown">
+          <div class="dropdown-select">
+            <label for="dropdownToggle" class="dropdown-select--value">
+              <div class="dropdown-select--value__image">
+                <img src="./src/assets/images/avatar.png" alt="">
+              </div>
+              <span class="dropdown-select--value__username">hoanggbao</span>
+              <i id="toggleDropdown" class="fas fa-triangle"></i>
+            </label>
+          </div>
+          <input type="checkbox" id="dropdownToggle">
+          <div class="dropdown--list">
+            <div class="dropdown--list__item icon">Account <i class="far fa-external-link"></i></div>
+            <div class="dropdown--list__item">Profile</div>
+            <div class="dropdown--list__item icon">Upgrade to Premium<i class="far fa-external-link"></i></div>
+            <div class="dropdown--list__item icon">Support<i class="far fa-external-link"></i></div>
+            <div class="dropdown--list__item icon">Download<i class="far fa-external-link"></i></div>
+            <div class="dropdown--list__item">Settings</div>
+            <div class="dropdown--list__item">Log out</div>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- header -->
+    <!-- body content-->
+    <main>
+      <div class="for-you-page">
+        <div class="for-you-page--title">
+          <p>Dành cho bạn</p>
+          <span>See all</span>
+        </div>
+        <div class="for-you-page--playlists">
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="for-you-page">
+        <div class="for-you-page--title">
+          <p>Dành cho bạn</p>
+          <span>See all</span>
+        </div>
+        <div class="for-you-page--playlists">
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+        </div>
+      </div>
+      <div class="for-you-page">
+        <div class="for-you-page--title">
+          <p>Dành cho bạn</p>
+          <span>See all</span>
+        </div>
+        <div class="for-you-page--playlists">
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+        </div>
+      </div>
+      <div class="for-you-page">
+        <div class="for-you-page--title">
+          <p>Dành cho bạn</p>
+          <span>See all</span>
+        </div>
+        <div class="for-you-page--playlists">
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+          <div class="for-you-page--playlists__item">
+            <div class="playlist--thumbnail">
+              <img src="./src/assets/images/1.jpg"alt="">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <p class="playlist--title">Daily Mix 1</p>
+            <span class="playlist--desc">Ngọt, Cá Hồi Hoang, Chillies và nhiều hơn nữa</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- body content-->
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <footer>
+      <div class="track--info">
+        <div class="track--info__img">
+          <img src="./src/assets/images/1.jpg" alt="">
+        </div>
+        <div class="track--info__title">
+          <p class="track-name">
+            Honey
+          </p>
+          <p class="track-artist">
+            <span class="artist">The Motel Brothers</span>
+            ,
+            <span class="artist">Katie Buxton</span>
+          </p>
+        </div>
+        <div class="track--info__favorite">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-columns"></i>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="row">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i id="middle" class="fas fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="far fa-repeat"></i>
+        </div>
+        <div class="row">
+          <span>1:25</span>
+          <div class="progress_bar">
+            <span></span>
+          </div>
+          <span>2:53</span>
+        </div>
+      </div>
+      <div class="features">
+        <i class="fas fa-microphone-stand"></i>
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-computer-speaker"></i>
+          <i id="mute" class="fas fa-volume-up">
+            <div class="volume-bar"></div>
+          </i>
+      </div>
+    </footer>
+    <div class="status">
+
+    </div>
+  </div>
+  <!-- footer -->
+
+
+</body>
+</html>
